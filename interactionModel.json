@@ -1,0 +1,53 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "shopping helper",
+      "intents": [
+        {
+          "name": "AddToCartIntent",
+          "slots": [
+            {
+              "name": "Product",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "add {Product} to my cart",
+            "I want to buy {Product}",
+            "put {Product} in the cart"
+          ]
+        },
+        {
+          "name": "CompareProductsIntent",
+          "slots": [
+            {
+              "name": "ProductOne",
+              "type": "AMAZON.SearchQuery"
+            },
+            {
+              "name": "ProductTwo",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "compare {ProductOne} and {ProductTwo}",
+            "which is better {ProductOne} or {ProductTwo}"
+          ]
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    }
+  }
+}
